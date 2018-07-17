@@ -14,6 +14,8 @@
 		587B970420FDC6C900115FDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 587B970220FDC6C900115FDC /* LaunchScreen.storyboard */; };
 		587B970720FDC6C900115FDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 587B970620FDC6C900115FDC /* main.m */; };
 		587B971120FDC6CA00115FDC /* MVVMDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 587B971020FDC6CA00115FDC /* MVVMDemoUITests.m */; };
+		587B972920FDE16D00115FDC /* HSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 587B972820FDE16D00115FDC /* HSBaseViewController.m */; };
+		587B972C20FDE1BB00115FDC /* HSBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 587B972B20FDE1BB00115FDC /* HSBaseViewModel.m */; };
 		F58137BBA05967D4D0D8B8EF /* libPods-MVVMDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76FC0CDDB4545537144315E9 /* libPods-MVVMDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,12 @@
 		587B970C20FDC6CA00115FDC /* MVVMDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		587B971020FDC6CA00115FDC /* MVVMDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMDemoUITests.m; sourceTree = "<group>"; };
 		587B971220FDC6CA00115FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		587B971C20FDD2AB00115FDC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		587B971D20FDDCC500115FDC /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		587B972720FDE16D00115FDC /* HSBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSBaseViewController.h; sourceTree = "<group>"; };
+		587B972820FDE16D00115FDC /* HSBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSBaseViewController.m; sourceTree = "<group>"; };
+		587B972A20FDE1BB00115FDC /* HSBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSBaseViewModel.h; sourceTree = "<group>"; };
+		587B972B20FDE1BB00115FDC /* HSBaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSBaseViewModel.m; sourceTree = "<group>"; };
 		76FC0CDDB4545537144315E9 /* libPods-MVVMDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVMDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C20CE3BFBAB4CA76D2BEE73B /* Pods-MVVMDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMDemo/Pods-MVVMDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F2CECFB7D71F1E274ABF6C51 /* Pods-MVVMDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMDemo/Pods-MVVMDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +106,8 @@
 		587B96F620FDC6C600115FDC /* MVVMDemo */ = {
 			isa = PBXGroup;
 			children = (
+				587B971E20FDDF6800115FDC /* Base */,
+				587B971B20FDD15800115FDC /* Public */,
 				587B96F720FDC6C600115FDC /* AppDelegate.h */,
 				587B96F820FDC6C600115FDC /* AppDelegate.m */,
 				587B96FA20FDC6C600115FDC /* ViewController.h */,
@@ -118,6 +128,42 @@
 				587B971220FDC6CA00115FDC /* Info.plist */,
 			);
 			path = MVVMDemoUITests;
+			sourceTree = "<group>";
+		};
+		587B971B20FDD15800115FDC /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				587B971C20FDD2AB00115FDC /* PrefixHeader.pch */,
+				587B971D20FDDCC500115FDC /* Constant.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		587B971E20FDDF6800115FDC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				587B972520FDE15900115FDC /* BaseVC */,
+				587B972620FDE15900115FDC /* BaseViewModel */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		587B972520FDE15900115FDC /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				587B972720FDE16D00115FDC /* HSBaseViewController.h */,
+				587B972820FDE16D00115FDC /* HSBaseViewController.m */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		587B972620FDE15900115FDC /* BaseViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				587B972A20FDE1BB00115FDC /* HSBaseViewModel.h */,
+				587B972B20FDE1BB00115FDC /* HSBaseViewModel.m */,
+			);
+			path = BaseViewModel;
 			sourceTree = "<group>";
 		};
 		86292B1515F1716D9F4F3FB8 /* Pods */ = {
@@ -288,6 +334,8 @@
 			files = (
 				587B96FC20FDC6C600115FDC /* ViewController.m in Sources */,
 				587B970720FDC6C900115FDC /* main.m in Sources */,
+				587B972C20FDE1BB00115FDC /* HSBaseViewModel.m in Sources */,
+				587B972920FDE16D00115FDC /* HSBaseViewController.m in Sources */,
 				587B96F920FDC6C600115FDC /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,8 +494,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MVVMDemo/Public/PrefixHeader.pch";
 				INFOPLIST_FILE = MVVMDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Hanser.MVVMDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -460,8 +512,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MVVMDemo/Public/PrefixHeader.pch";
 				INFOPLIST_FILE = MVVMDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Hanser.MVVMDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -473,7 +529,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MVVMDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Hanser.MVVMDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -486,7 +546,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MVVMDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Hanser.MVVMDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
