@@ -10,5 +10,6 @@
 #define PrefixHeader_pch
 
 #import "Constant.h"
+#import "HSHeader.h"
 
 #endif /* PrefixHeader_pch */
