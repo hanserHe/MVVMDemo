@@ -18,6 +18,9 @@
 		587B972C20FDE1BB00115FDC /* HSBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 587B972B20FDE1BB00115FDC /* HSBaseViewModel.m */; };
 		58D4A3F02109C9AD0081EE61 /* HSBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D4A3EF2109C9AD0081EE61 /* HSBaseModel.m */; };
 		58D4A3F42109CBBA0081EE61 /* HSHTTPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D4A3F32109CBBA0081EE61 /* HSHTTPHelper.m */; };
+		58F49755211485A80066C942 /* HSDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F49754211485A80066C942 /* HSDemoViewController.m */; };
+		58F497622116A2B70066C942 /* NSTimer+HSTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F4975E2116A2B70066C942 /* NSTimer+HSTimer.m */; };
+		58F497632116A2B70066C942 /* HSTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F497602116A2B70066C942 /* HSTimer.m */; };
 		F58137BBA05967D4D0D8B8EF /* libPods-MVVMDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76FC0CDDB4545537144315E9 /* libPods-MVVMDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +60,12 @@
 		58D4A3F22109CBBA0081EE61 /* HSHTTPHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSHTTPHelper.h; sourceTree = "<group>"; };
 		58D4A3F32109CBBA0081EE61 /* HSHTTPHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSHTTPHelper.m; sourceTree = "<group>"; };
 		58D4A3F52109CCD40081EE61 /* HSHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSHeader.h; sourceTree = "<group>"; };
+		58F49753211485A80066C942 /* HSDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSDemoViewController.h; sourceTree = "<group>"; };
+		58F49754211485A80066C942 /* HSDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSDemoViewController.m; sourceTree = "<group>"; };
+		58F4975E2116A2B70066C942 /* NSTimer+HSTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+HSTimer.m"; sourceTree = "<group>"; };
+		58F4975F2116A2B70066C942 /* HSTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSTimer.h; sourceTree = "<group>"; };
+		58F497602116A2B70066C942 /* HSTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSTimer.m; sourceTree = "<group>"; };
+		58F497612116A2B70066C942 /* NSTimer+HSTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+HSTimer.h"; sourceTree = "<group>"; };
 		76FC0CDDB4545537144315E9 /* libPods-MVVMDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVMDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C20CE3BFBAB4CA76D2BEE73B /* Pods-MVVMDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMDemo/Pods-MVVMDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F2CECFB7D71F1E274ABF6C51 /* Pods-MVVMDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMDemo/Pods-MVVMDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +122,9 @@
 		587B96F620FDC6C600115FDC /* MVVMDemo */ = {
 			isa = PBXGroup;
 			children = (
+				58F4975D2116A2860066C942 /* Category */,
+				58F4975621169A4E0066C942 /* Extension */,
+				58F497522114857C0066C942 /* View */,
 				58D4A3F12109CBA40081EE61 /* Helper */,
 				58D4A3ED2109C9330081EE61 /* Model */,
 				587B971E20FDDF6800115FDC /* Base */,
@@ -192,6 +204,33 @@
 				58D4A3F32109CBBA0081EE61 /* HSHTTPHelper.m */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		58F497522114857C0066C942 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				58F49753211485A80066C942 /* HSDemoViewController.h */,
+				58F49754211485A80066C942 /* HSDemoViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		58F4975621169A4E0066C942 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		58F4975D2116A2860066C942 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				58F4975F2116A2B70066C942 /* HSTimer.h */,
+				58F497602116A2B70066C942 /* HSTimer.m */,
+				58F497612116A2B70066C942 /* NSTimer+HSTimer.h */,
+				58F4975E2116A2B70066C942 /* NSTimer+HSTimer.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		86292B1515F1716D9F4F3FB8 /* Pods */ = {
@@ -360,13 +399,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58F49755211485A80066C942 /* HSDemoViewController.m in Sources */,
 				587B96FC20FDC6C600115FDC /* ViewController.m in Sources */,
+				58F497632116A2B70066C942 /* HSTimer.m in Sources */,
 				58D4A3F02109C9AD0081EE61 /* HSBaseModel.m in Sources */,
 				587B970720FDC6C900115FDC /* main.m in Sources */,
 				587B972C20FDE1BB00115FDC /* HSBaseViewModel.m in Sources */,
 				587B972920FDE16D00115FDC /* HSBaseViewController.m in Sources */,
 				58D4A3F42109CBBA0081EE61 /* HSHTTPHelper.m in Sources */,
 				587B96F920FDC6C600115FDC /* AppDelegate.m in Sources */,
+				58F497622116A2B70066C942 /* NSTimer+HSTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

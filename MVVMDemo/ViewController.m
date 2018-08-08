@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HSDemoViewController.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,8 @@
 
 
 - (IBAction)gotoDemo:(id)sender {
+    HSDemoViewController *demoVC = [HSDemoViewController new];
+    [self.navigationController pushViewController:demoVC animated:YES];
 }
 
 
