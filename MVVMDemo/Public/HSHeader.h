@@ -10,5 +10,7 @@
 #define HSHeader_h
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import <Masonry.h>
+#import <MJRefresh.h>
 
 #endif /* HSHeader_h */
