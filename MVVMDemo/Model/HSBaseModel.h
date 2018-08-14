@@ -10,4 +10,8 @@
 
 @interface HSBaseModel : NSObject
 
+- (RACSignal *)requestWithURLString:(NSString *)URLString
+                    paramDictionary:(NSDictionary *)paramDictionary
+                  parserEntityClass:(Class)parserEntityClass;
+
 @end

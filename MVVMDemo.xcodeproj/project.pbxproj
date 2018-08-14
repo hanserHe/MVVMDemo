@@ -21,6 +21,14 @@
 		58C475B42121684800769EAE /* HSTableViewCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C475B32121684800769EAE /* HSTableViewCellViewModel.m */; };
 		58C475B7212177FC00769EAE /* HSPagingTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C475B6212177FC00769EAE /* HSPagingTableViewModel.m */; };
 		58C475BD2121976300769EAE /* HSBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C475BC2121976300769EAE /* HSBaseTableViewCell.m */; };
+		58CABAE02122785300F0A19D /* HSBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CABADF2122785300F0A19D /* HSBaseView.m */; };
+		58CABAE3212280AD00F0A19D /* HSPagingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CABAE2212280AD00F0A19D /* HSPagingTableViewController.m */; };
+		58CABAE72122A3E600F0A19D /* HSBaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CABAE62122A3E600F0A19D /* HSBaseEntity.m */; };
+		58CABAEA2122A49D00F0A19D /* HSDemoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CABAE92122A49D00F0A19D /* HSDemoEntity.m */; };
+		58CABAEE2122AE5000F0A19D /* HSDemoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CABAED2122AE5000F0A19D /* HSDemoViewModel.m */; };
+		58CABAF12122B33100F0A19D /* HSDemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CABAF02122B33100F0A19D /* HSDemoModel.m */; };
+		58CABAF42122BB8300F0A19D /* HSDemoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CABAF32122BB8300F0A19D /* HSDemoTableViewCell.m */; };
+		58CABAF72122C48600F0A19D /* HSDemoTableViewCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CABAF62122C48600F0A19D /* HSDemoTableViewCellViewModel.m */; };
 		58D4A3F02109C9AD0081EE61 /* HSBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D4A3EF2109C9AD0081EE61 /* HSBaseModel.m */; };
 		58D4A3F42109CBBA0081EE61 /* HSHTTPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D4A3F32109CBBA0081EE61 /* HSHTTPHelper.m */; };
 		58F49755211485A80066C942 /* HSDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F49754211485A80066C942 /* HSDemoViewController.m */; };
@@ -71,6 +79,22 @@
 		58C475BA2121945400769EAE /* HSTableViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSTableViewModelProtocol.h; sourceTree = "<group>"; };
 		58C475BB2121976300769EAE /* HSBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSBaseTableViewCell.h; sourceTree = "<group>"; };
 		58C475BC2121976300769EAE /* HSBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSBaseTableViewCell.m; sourceTree = "<group>"; };
+		58CABADE2122785300F0A19D /* HSBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSBaseView.h; sourceTree = "<group>"; };
+		58CABADF2122785300F0A19D /* HSBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSBaseView.m; sourceTree = "<group>"; };
+		58CABAE1212280AD00F0A19D /* HSPagingTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSPagingTableViewController.h; sourceTree = "<group>"; };
+		58CABAE2212280AD00F0A19D /* HSPagingTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSPagingTableViewController.m; sourceTree = "<group>"; };
+		58CABAE52122A3E600F0A19D /* HSBaseEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSBaseEntity.h; sourceTree = "<group>"; };
+		58CABAE62122A3E600F0A19D /* HSBaseEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSBaseEntity.m; sourceTree = "<group>"; };
+		58CABAE82122A49D00F0A19D /* HSDemoEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSDemoEntity.h; sourceTree = "<group>"; };
+		58CABAE92122A49D00F0A19D /* HSDemoEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSDemoEntity.m; sourceTree = "<group>"; };
+		58CABAEC2122AE5000F0A19D /* HSDemoViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSDemoViewModel.h; sourceTree = "<group>"; };
+		58CABAED2122AE5000F0A19D /* HSDemoViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSDemoViewModel.m; sourceTree = "<group>"; };
+		58CABAEF2122B33100F0A19D /* HSDemoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSDemoModel.h; sourceTree = "<group>"; };
+		58CABAF02122B33100F0A19D /* HSDemoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSDemoModel.m; sourceTree = "<group>"; };
+		58CABAF22122BB8300F0A19D /* HSDemoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSDemoTableViewCell.h; sourceTree = "<group>"; };
+		58CABAF32122BB8300F0A19D /* HSDemoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSDemoTableViewCell.m; sourceTree = "<group>"; };
+		58CABAF52122C48600F0A19D /* HSDemoTableViewCellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSDemoTableViewCellViewModel.h; sourceTree = "<group>"; };
+		58CABAF62122C48600F0A19D /* HSDemoTableViewCellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSDemoTableViewCellViewModel.m; sourceTree = "<group>"; };
 		58D4A3EE2109C9AD0081EE61 /* HSBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSBaseModel.h; sourceTree = "<group>"; };
 		58D4A3EF2109C9AD0081EE61 /* HSBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSBaseModel.m; sourceTree = "<group>"; };
 		58D4A3F22109CBBA0081EE61 /* HSHTTPHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSHTTPHelper.h; sourceTree = "<group>"; };
@@ -138,12 +162,14 @@
 		587B96F620FDC6C600115FDC /* MVVMDemo */ = {
 			isa = PBXGroup;
 			children = (
+				58CABAE42122A3C600F0A19D /* Entity */,
+				58D4A3F12109CBA40081EE61 /* Helper */,
+				587B971B20FDD15800115FDC /* Public */,
+				587B971E20FDDF6800115FDC /* Base */,
+				58CABAEB2122ADFB00F0A19D /* ViewModel */,
 				58F4975D2116A2860066C942 /* Category */,
 				58F497522114857C0066C942 /* View */,
-				58D4A3F12109CBA40081EE61 /* Helper */,
 				58D4A3ED2109C9330081EE61 /* Model */,
-				587B971E20FDDF6800115FDC /* Base */,
-				587B971B20FDD15800115FDC /* Public */,
 				587B96F720FDC6C600115FDC /* AppDelegate.h */,
 				587B96F820FDC6C600115FDC /* AppDelegate.m */,
 				587B96FA20FDC6C600115FDC /* ViewController.h */,
@@ -194,6 +220,10 @@
 				58C475AA2121652D00769EAE /* HSTableViewController.m */,
 				58C475BB2121976300769EAE /* HSBaseTableViewCell.h */,
 				58C475BC2121976300769EAE /* HSBaseTableViewCell.m */,
+				58CABADE2122785300F0A19D /* HSBaseView.h */,
+				58CABADF2122785300F0A19D /* HSBaseView.m */,
+				58CABAE1212280AD00F0A19D /* HSPagingTableViewController.h */,
+				58CABAE2212280AD00F0A19D /* HSPagingTableViewController.m */,
 			);
 			path = BaseVC;
 			sourceTree = "<group>";
@@ -214,11 +244,35 @@
 			path = BaseViewModel;
 			sourceTree = "<group>";
 		};
+		58CABAE42122A3C600F0A19D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				58CABAE52122A3E600F0A19D /* HSBaseEntity.h */,
+				58CABAE62122A3E600F0A19D /* HSBaseEntity.m */,
+				58CABAE82122A49D00F0A19D /* HSDemoEntity.h */,
+				58CABAE92122A49D00F0A19D /* HSDemoEntity.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		58CABAEB2122ADFB00F0A19D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				58CABAEC2122AE5000F0A19D /* HSDemoViewModel.h */,
+				58CABAED2122AE5000F0A19D /* HSDemoViewModel.m */,
+				58CABAF52122C48600F0A19D /* HSDemoTableViewCellViewModel.h */,
+				58CABAF62122C48600F0A19D /* HSDemoTableViewCellViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		58D4A3ED2109C9330081EE61 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				58D4A3EE2109C9AD0081EE61 /* HSBaseModel.h */,
 				58D4A3EF2109C9AD0081EE61 /* HSBaseModel.m */,
+				58CABAEF2122B33100F0A19D /* HSDemoModel.h */,
+				58CABAF02122B33100F0A19D /* HSDemoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -237,6 +291,8 @@
 			children = (
 				58F49753211485A80066C942 /* HSDemoViewController.h */,
 				58F49754211485A80066C942 /* HSDemoViewController.m */,
+				58CABAF22122BB8300F0A19D /* HSDemoTableViewCell.h */,
+				58CABAF32122BB8300F0A19D /* HSDemoTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -418,18 +474,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58CABAE72122A3E600F0A19D /* HSBaseEntity.m in Sources */,
+				58CABAE3212280AD00F0A19D /* HSPagingTableViewController.m in Sources */,
+				58CABAF12122B33100F0A19D /* HSDemoModel.m in Sources */,
 				58C475B7212177FC00769EAE /* HSPagingTableViewModel.m in Sources */,
 				58F49755211485A80066C942 /* HSDemoViewController.m in Sources */,
+				58CABAEA2122A49D00F0A19D /* HSDemoEntity.m in Sources */,
 				587B96FC20FDC6C600115FDC /* ViewController.m in Sources */,
 				58C475BD2121976300769EAE /* HSBaseTableViewCell.m in Sources */,
 				58C475B42121684800769EAE /* HSTableViewCellViewModel.m in Sources */,
+				58CABAEE2122AE5000F0A19D /* HSDemoViewModel.m in Sources */,
 				58C475AB2121652D00769EAE /* HSTableViewController.m in Sources */,
 				58F497632116A2B70066C942 /* HSTimer.m in Sources */,
 				58D4A3F02109C9AD0081EE61 /* HSBaseModel.m in Sources */,
+				58CABAE02122785300F0A19D /* HSBaseView.m in Sources */,
 				587B970720FDC6C900115FDC /* main.m in Sources */,
+				58CABAF42122BB8300F0A19D /* HSDemoTableViewCell.m in Sources */,
 				587B972C20FDE1BB00115FDC /* HSBaseViewModel.m in Sources */,
 				587B972920FDE16D00115FDC /* HSBaseViewController.m in Sources */,
 				58C475AE212165C800769EAE /* HSTableViewModel.m in Sources */,
+				58CABAF72122C48600F0A19D /* HSDemoTableViewCellViewModel.m in Sources */,
 				58D4A3F42109CBBA0081EE61 /* HSHTTPHelper.m in Sources */,
 				587B96F920FDC6C600115FDC /* AppDelegate.m in Sources */,
 				58F497622116A2B70066C942 /* NSTimer+HSTimer.m in Sources */,

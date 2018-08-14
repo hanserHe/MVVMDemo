@@ -29,7 +29,7 @@
 
 - (NSInteger)numberOfSection
 {
-    return 0;
+    return 1;
 }
 
 - (NSInteger)numberOfRowInSection:(NSInteger)section
@@ -58,7 +58,11 @@
 
 - (void)handleMutableArrayEntities:(NSArray *)entities cellViewModelClass:(Class)cellViewModelClass
 {
-    
+    NSMutableArray *cellViewModels = [NSMutableArray array];
+    [entities enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [cellViewModels addObject:[[cellViewModelClass alloc] initWithEntity:obj]];
+    }];
+    [self.cellViewModels addObjectsFromArray:cellViewModels];
 }
 
 

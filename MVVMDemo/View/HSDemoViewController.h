@@ -6,8 +6,8 @@
 //  Copyright © 2018年 Mr.H. All rights reserved.
 //
 
-#import "HSBaseViewController.h"
+#import "HSPagingTableViewController.h"
 
-@interface HSDemoViewController : HSBaseViewController
+@interface HSDemoViewController : HSPagingTableViewController
 
 @end

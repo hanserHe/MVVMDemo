@@ -7,6 +7,7 @@
 //
 
 #import "HSDemoViewController.h"
+#import "HSDemoTableViewCell.h"
 
 
 
@@ -16,9 +17,51 @@
 
 @implementation HSDemoViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+    
+    [self setupLayout];
+    [self setupBinding];
+    [self setupData];
 }
+
+- (void)setupLayout
+{
+    [super setupLayout];
+    @weakify(self);
+    [RACObserve(self.viewModel, isNeedRefresh) subscribeNext:^(id x) {
+        @strongify(self);
+        if ([x boolValue]) {
+            [self.tableView reloadData];
+        }
+    }];
+}
+
+- (void)setupBinding
+{
+    [super setupBinding];
+    @weakify(self);
+    [self.viewModel sendRequest:^(id entity) {
+        @strongify(self);
+        [self hideLoadingViewFooter];
+        [self.tableView reloadData];
+        
+    } failure:^(NSUInteger errCode, NSString *errorMsg) {
+        
+    }];
+}
+
+- (void)setupData
+{
+    [super setupData];
+}
+
+- (Class)cellClassForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [HSDemoTableViewCell class];
+}
+
 
 #pragma mark - life cycle
 - (void)viewWillDisappear:(BOOL)animated {
@@ -37,7 +80,6 @@
 
 
 #pragma mark ------------------
-
 - (void)dealloc {
 
 }

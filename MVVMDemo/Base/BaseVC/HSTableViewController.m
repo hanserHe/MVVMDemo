@@ -11,29 +11,24 @@
 
 @interface HSTableViewController ()
 
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, assign) BOOL isRefresh;
+
 @end
 
 @implementation HSTableViewController
+@dynamic viewModel;
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+- (instancetype)initWithViewModel:(HSBaseViewModel *)viewModel
+{
+    return [super initWithModel:viewModel];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupLayout
+{
+    [super setupLayout];
+    
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
 
