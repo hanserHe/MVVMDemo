@@ -18,9 +18,9 @@
 @dynamic viewModel;
 
 
-- (instancetype)initWithModel:(HSPagingTableViewModel *)viewModel
+- (instancetype)initWithViewModel:(HSPagingTableViewModel *)viewModel
 {
-    return [super initWithModel:viewModel];
+    return [super initWithViewModel:viewModel];
 }
 
 - (void)setupLayout

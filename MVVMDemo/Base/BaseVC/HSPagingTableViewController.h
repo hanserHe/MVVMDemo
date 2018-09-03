@@ -13,7 +13,7 @@
 
 @property (nonatomic, strong, readonly) HSPagingTableViewModel *viewModel;
 
-- (instancetype)initWithModel:(HSPagingTableViewModel *)viewModel;
+- (instancetype)initWithViewModel:(HSPagingTableViewModel *)viewModel;
 
 - (void)hideLoadingViewFooter;
 

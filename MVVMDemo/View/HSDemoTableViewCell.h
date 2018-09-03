@@ -6,8 +6,11 @@
 //  Copyright © 2018 Mr.H. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "HSBaseTableViewCell.h"
+#import "HSDemoTableViewCellViewModel.h"
 
 @interface HSDemoTableViewCell : UITableViewCell
+
+@property (nonatomic, strong, readonly) HSDemoTableViewCellViewModel *viewModel;
 
 @end

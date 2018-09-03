@@ -22,7 +22,7 @@
 
 - (instancetype)initWithViewModel:(HSBaseViewModel *)viewModel
 {
-    return [super initWithModel:viewModel];
+    return [super initWithViewModel:viewModel];
 }
 
 - (void)setupLayout
@@ -111,7 +111,11 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CGFloat height = tableView.rowHeight;
-    NSNumber *calculateHeight = [[self cellClassForRowAtIndexPath:indexPath] ];
+    NSNumber *calculateHeight = [[self cellClassForRowAtIndexPath:indexPath] calculateRowHeightWithViewModel:[self.viewModel cellViewModelForRowAtIndexPath:indexPath]];
+    if (calculateHeight) {
+        height = calculateHeight.floatValue;
+    }
+    return height;
 }
 
 @end

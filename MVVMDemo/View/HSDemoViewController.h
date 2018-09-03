@@ -7,7 +7,10 @@
 //
 
 #import "HSPagingTableViewController.h"
+#import "HSDemoViewModel.h"
 
 @interface HSDemoViewController : HSPagingTableViewController
+
+@property (nonatomic, strong, readonly) HSDemoViewModel *viewModel;
 
 @end

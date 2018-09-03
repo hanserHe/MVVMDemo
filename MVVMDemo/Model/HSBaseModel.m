@@ -21,8 +21,14 @@
                     paramDictionary:(NSDictionary *)paramDictionary
                   parserEntityClass:(Class)parserEntityClass
 {
+    @weakify(self);
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        
+        @strongify(self);
+        [self.httpHelper requestWithURLString:URLString paramDictionary:paramDictionary entityClass:parserEntityClass completeBlock:^(id data) {
+//            NSLog(@"data-----%@",data);
+            [subscriber sendNext:data];
+            [subscriber sendCompleted];
+        }];
         return nil;
     }];
 }

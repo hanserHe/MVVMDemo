@@ -19,7 +19,7 @@
  * @param viewModel 传入的viewModel
  * @return 实例化的对象
  */
-- (instancetype)initWithModel:(HSBaseViewModel *)viewModel;
+- (instancetype)initWithViewModel:(HSBaseViewModel *)viewModel;
 
 /**
  * UI布局

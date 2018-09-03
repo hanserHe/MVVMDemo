@@ -16,7 +16,7 @@
 
 @implementation HSBaseViewController
 
-- (instancetype)initWithModel:(HSBaseViewModel *)viewModel {
+- (instancetype)initWithViewModel:(HSBaseViewModel *)viewModel {
     self = [super init];
     if (self) {
         self.viewModel = viewModel;

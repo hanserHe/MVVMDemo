@@ -8,17 +8,20 @@
 
 #import "HSDemoTableViewCell.h"
 
+
+@interface HSDemoTableViewCell()
+
+@end
+
 @implementation HSDemoTableViewCell
+@dynamic viewModel;
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
++ (NSNumber *)calculateRowHeightWithViewModel:(HSDemoTableViewCellViewModel *)viewModel
+{
+    return [viewModel cacheCellHeightWithCalculateBlock:^NSNumber * _Nonnull{
+        return viewModel.totalHeight;
+    }];
 }
 
 @end

@@ -23,7 +23,8 @@
 
 
 - (IBAction)gotoDemo:(id)sender {
-    HSDemoViewController *demoVC = [HSDemoViewController new];
+    HSDemoViewModel *viewModel = [[HSDemoViewModel alloc] init];
+    HSDemoViewController *demoVC = [[HSDemoViewController alloc] initWithViewModel:viewModel];
     [self.navigationController pushViewController:demoVC animated:YES];
 }
 

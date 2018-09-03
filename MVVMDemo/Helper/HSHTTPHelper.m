@@ -18,7 +18,8 @@
 {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
-    
+    NSArray *dataArray = [NSArray arrayWithObjects:@"Hanser",@"James", nil];
+    !completeBlock ?: completeBlock(dataArray);
 }
 
 @end

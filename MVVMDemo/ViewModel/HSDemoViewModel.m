@@ -38,6 +38,15 @@
     }];
 }
 
+- (NSInteger)numberOfRowInSection:(NSInteger)section
+{
+    return self.cellViewModels.count;
+}
+
+- (HSTableViewCellViewModel *)cellViewModelForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return self.cellViewModels[indexPath.row];
+}
 
 
 - (HSBaseViewController *)tableViewDidSelectedRowAtIndexPath:(NSIndexPath *)indexPath

@@ -10,6 +10,15 @@
 
 @implementation HSBaseViewModel
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self setupData];
+    }
+    return self;
+}
+
 
 - (void)setupData
 {
@@ -20,6 +29,9 @@
 - (void)setupBinding{}
 
 // 抽象方法
-- (void)sendRequest:(HSRequestSucceed)succeedBlock failure:(HSRequestFailure)failBlock{}
+- (void)sendRequest:(HSRequestSucceed)succeedBlock failure:(HSRequestFailure)failBlock
+{
+    
+}
 
 @end
